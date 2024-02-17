@@ -34,9 +34,9 @@ function calAtbiotico(x,agora,diferencaDia) {
     if((diferencaDia*-1) <= 10) {
         console.log("ta de boa")
         slPara.innerText = `Do dia ${agora.getDate()-(diferencaDia*-1)} até o dia ${agora.getDate()} já se passaram-se ${diferencaDia*-1} dias. Essa receita é valida até o dia ${auxData.getDate()}/${auxData.getMonth().toString().padStart(2, '0')}/${auxData.getFullYear()}`;
-        slImg.src = `img/right.svg`;
+        slImg.src = `IMG/right.svg`;
     }else {
         slPara.innerText = `Do dia ${agora.getDate()-(diferencaDia*-1)} até o dia ${agora.getDate()} já se passaram-se ${diferencaDia*-1} dias. Essa receita venceu dia ${auxData.getDate()}/${auxData.getMonth().toString().padStart(2, '0')}/${auxData.getFullYear()}`;
-        slImg.src = `img/wrong.svg`;
+        slImg.src = `IMG/wrong.svg`;
     }
 }
